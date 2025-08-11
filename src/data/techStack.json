@@ -82,7 +82,7 @@
       { "source": "household-api", "target": "policyengine-app" }
     ],
     "future": [
-      { "source": "microdf", "target": "policyengine-core" },
+      { "source": "microdf", "target": "policyengine-data" },
       { "source": "L0", "target": "microcalibrate" },
       { "source": "microimpute", "target": "policyengine-data" },
       { "source": "microcalibrate", "target": "policyengine-data" },
