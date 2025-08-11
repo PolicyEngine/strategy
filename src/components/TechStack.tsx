@@ -45,12 +45,18 @@ interface TechStackData {
 const dagreGraph = new dagre.graphlib.Graph();
 dagreGraph.setDefaultEdgeLabel(() => ({}));
 
-const nodeWidth = 200;
-const nodeHeight = 50;
+const nodeWidth = 180;
+const nodeHeight = 40;
 
 const getLayoutedElements = (nodes: Node[], edges: Edge[], direction = 'TB') => {
   const isHorizontal = direction === 'LR';
-  dagreGraph.setGraph({ rankdir: direction });
+  dagreGraph.setGraph({ 
+    rankdir: direction,
+    nodesep: 50,
+    ranksep: 80,
+    marginx: 20,
+    marginy: 20
+  });
 
   nodes.forEach((node) => {
     dagreGraph.setNode(node.id, { width: nodeWidth, height: nodeHeight });
@@ -114,7 +120,11 @@ const TechStack = () => {
         type: 'default',
         data: { label: nodeId },
         position: { x: 0, y: 0 },
-        style
+        style: {
+          ...style,
+          fontSize: '12px',
+          padding: '8px'
+        }
       };
     });
     
@@ -195,10 +205,10 @@ const TechStack = () => {
   };
 
   return (
-    <Box sx={{ height: 'calc(100vh - 64px)', display: 'flex', flexDirection: 'column' }}>
-      <Paper sx={{ p: 2, m: 2 }}>
-        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 2 }}>
-          <Typography variant="h5">PolicyEngine Tech Stack Architecture</Typography>
+    <Box sx={{ height: '100vh', display: 'flex', flexDirection: 'column' }}>
+      <Paper sx={{ p: 1.5, m: 1, flexShrink: 0 }}>
+        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 1 }}>
+          <Typography variant="h6">PolicyEngine Tech Stack Architecture</Typography>
           <ToggleButtonGroup
             value={view}
             exclusive
@@ -210,13 +220,13 @@ const TechStack = () => {
           </ToggleButtonGroup>
         </Box>
         
-        <Typography variant="body2" sx={{ mb: 1 }}>
+        <Typography variant="caption" sx={{ mb: 0.5 }}>
           Click on any component to visit its GitHub repository. Hover over nodes to highlight connections.
         </Typography>
         
         {view === 'future' && (
-          <Box sx={{ bgcolor: 'info.light', p: 1.5, borderRadius: 1 }}>
-            <Typography variant="body2">
+          <Box sx={{ bgcolor: 'info.light', p: 1, borderRadius: 1 }}>
+            <Typography variant="caption">
               <strong>Key Changes:</strong> policyengine-api removed • policyengine.py expanded role • 
               unified policyengine-data package • new country models (IL, NG) • TypeScript app v2
             </Typography>
@@ -224,7 +234,7 @@ const TechStack = () => {
         )}
       </Paper>
 
-      <Box sx={{ flex: 1, px: 2, pb: 2 }}>
+      <Box sx={{ flex: 1, px: 1, pb: 1, minHeight: 0 }}>
         <ReactFlowProvider>
           <ReactFlow
             nodes={displayNodes}
@@ -236,6 +246,14 @@ const TechStack = () => {
             onNodeMouseLeave={() => setHoveredNode(null)}
             connectionMode={ConnectionMode.Loose}
             fitView
+            fitViewOptions={{
+              padding: 0.2,
+              maxZoom: 1.5,
+              minZoom: 0.5
+            }}
+            defaultViewport={{ x: 0, y: 0, zoom: 0.8 }}
+            minZoom={0.3}
+            maxZoom={2}
           >
             <svg style={{ position: 'absolute', width: 0, height: 0 }}>
               <defs>
