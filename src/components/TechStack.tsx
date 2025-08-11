@@ -123,7 +123,8 @@ const TechStack = () => {
         style: {
           ...style,
           fontSize: '12px',
-          padding: '8px'
+          padding: '8px',
+          fontFamily: '"Roboto Mono", monospace'
         }
       };
     });
