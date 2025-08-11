@@ -1,0 +1,125 @@
+{
+  "nodes": {
+    "microdf": {
+      "category": "utilities"
+    },
+    "microimpute": {
+      "category": "utilities"
+    },
+    "L0": {
+      "category": "utilities"
+    },
+    "microcalibrate": {
+      "category": "utilities"
+    },
+    "policyengine-core": {
+      "category": "core"
+    },
+    "policyengine-data": {
+      "category": "data"
+    },
+    "policyengine-us": {
+      "category": "country"
+    },
+    "policyengine-uk": {
+      "category": "country"
+    },
+    "policyengine-canada": {
+      "category": "country"
+    },
+    "policyengine-il": {
+      "category": "country"
+    },
+    "policyengine-ng": {
+      "category": "country"
+    },
+    "policyengine-us-data": {
+      "category": "data"
+    },
+    "policyengine-uk-data": {
+      "category": "data"
+    },
+    "policyengine.py": {
+      "category": "integration"
+    },
+    "policyengine-api": {
+      "category": "api"
+    },
+    "policyengine-api-v2": {
+      "category": "api"
+    },
+    "household-api": {
+      "category": "api"
+    },
+    "policyengine-app": {
+      "category": "application"
+    },
+    "policyengine-app-v2": {
+      "category": "application"
+    }
+  },
+  "edges": {
+    "current": [
+      { "source": "microdf", "target": "policyengine-core" },
+      { "source": "policyengine-core", "target": "policyengine-us" },
+      { "source": "policyengine-core", "target": "policyengine-uk" },
+      { "source": "policyengine-us", "target": "policyengine-us-data" },
+      { "source": "policyengine-uk", "target": "policyengine-uk-data" },
+      { "source": "microimpute", "target": "policyengine-us-data" },
+      { "source": "policyengine-us-data", "target": "policyengine-api-v2" },
+      { "source": "policyengine-uk-data", "target": "policyengine-api-v2" },
+      { "source": "policyengine-us", "target": "policyengine-api" },
+      { "source": "policyengine-uk", "target": "policyengine-api" },
+      { "source": "policyengine-us", "target": "household-api" },
+      { "source": "policyengine-uk", "target": "household-api" },
+      { "source": "policyengine-us", "target": "policyengine.py" },
+      { "source": "policyengine-uk", "target": "policyengine.py" },
+      { "source": "policyengine-us-data", "target": "policyengine.py" },
+      { "source": "policyengine-uk-data", "target": "policyengine.py" },
+      { "source": "policyengine.py", "target": "policyengine-api-v2" },
+      { "source": "policyengine-api", "target": "policyengine-app" },
+      { "source": "policyengine-api-v2", "target": "policyengine-app" },
+      { "source": "household-api", "target": "policyengine-app" }
+    ],
+    "future": [
+      { "source": "microdf", "target": "policyengine-core" },
+      { "source": "L0", "target": "microcalibrate" },
+      { "source": "microimpute", "target": "policyengine-data" },
+      { "source": "microcalibrate", "target": "policyengine-data" },
+      { "source": "policyengine-data", "target": "policyengine-us-data" },
+      { "source": "policyengine-data", "target": "policyengine-uk-data" },
+      { "source": "policyengine-core", "target": "policyengine-us" },
+      { "source": "policyengine-core", "target": "policyengine-uk" },
+      { "source": "policyengine-core", "target": "policyengine-canada" },
+      { "source": "policyengine-core", "target": "policyengine-il" },
+      { "source": "policyengine-core", "target": "policyengine-ng" },
+      { "source": "policyengine-us", "target": "policyengine-us-data" },
+      { "source": "policyengine-uk", "target": "policyengine-uk-data" },
+      { "source": "policyengine-us", "target": "household-api" },
+      { "source": "policyengine-uk", "target": "household-api" },
+      { "source": "policyengine-canada", "target": "household-api" },
+      { "source": "policyengine-us", "target": "policyengine.py" },
+      { "source": "policyengine-uk", "target": "policyengine.py" },
+      { "source": "policyengine-canada", "target": "policyengine.py" },
+      { "source": "policyengine-il", "target": "policyengine.py" },
+      { "source": "policyengine-ng", "target": "policyengine.py" },
+      { "source": "policyengine-us-data", "target": "policyengine.py" },
+      { "source": "policyengine-uk-data", "target": "policyengine.py" },
+      { "source": "policyengine.py", "target": "policyengine-api-v2" },
+      { "source": "policyengine.py", "target": "household-api" },
+      { "source": "policyengine-us-data", "target": "policyengine-api-v2" },
+      { "source": "policyengine-uk-data", "target": "policyengine-api-v2" },
+      { "source": "policyengine-api-v2", "target": "policyengine-app-v2" },
+      { "source": "household-api", "target": "policyengine-app-v2" }
+    ]
+  },
+  "categoryStyles": {
+    "utilities": { "background": "#f5f5f5", "border": "2px solid #424242" },
+    "core": { "background": "#e1f5fe", "border": "2px solid #01579b" },
+    "country": { "background": "#f3e5f5", "border": "2px solid #4a148c" },
+    "data": { "background": "#e8f5e9", "border": "2px solid #1b5e20" },
+    "integration": { "background": "#e1f5fe", "border": "2px solid #01579b" },
+    "api": { "background": "#fff3e0", "border": "2px solid #e65100" },
+    "application": { "background": "#fce4ec", "border": "2px solid #880e4f" }
+  }
+}
