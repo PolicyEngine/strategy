@@ -26,20 +26,23 @@ interface NodeData {
   deprecated?: boolean;
 }
 
+// EdgeData interface - used implicitly by techStackData
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 interface EdgeData {
   source: string;
   target: string;
   deprecated?: boolean;
 }
 
-interface TechStackData {
-  nodes: Record<string, NodeData>;
-  edges: {
-    current: EdgeData[];
-    future: EdgeData[];
-  };
-  categoryStyles: Record<string, any>;
-}
+// Commented out - keeping for potential future use
+// interface TechStackData {
+//   nodes: Record<string, NodeData>;
+//   edges: {
+//     current: EdgeData[];
+//     future: EdgeData[];
+//   };
+//   categoryStyles: Record<string, any>;
+// }
 
 // Create dagre graph for automatic layout
 const dagreGraph = new dagre.graphlib.Graph();

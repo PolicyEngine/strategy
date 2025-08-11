@@ -112,8 +112,8 @@ const RoadmapGraph: React.FC = () => {
     style: { stroke: palette.MEDIUM_LIGHT_GRAY, strokeWidth: 2 },
   }));
 
-  const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
-  const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
+  const [nodes, , onNodesChange] = useNodesState(initialNodes);
+  const [edges, , onEdgesChange] = useEdgesState(initialEdges);
   const [selected, setSelected] = React.useState<string | null>(null);
 
   const onNodeClick = useCallback((_: any, node: Node) => {
