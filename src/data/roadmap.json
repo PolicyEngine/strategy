@@ -1,0 +1,588 @@
+{
+  "nodes": [
+    {
+      "id": "granular-geo",
+      "label": "Granular Geographic Modeling",
+      "category": "Data & Modeling",
+      "description": "Extending simulations from states to state legislative districts and counties to identify regional disparities and benefit uptake gaps",
+      "kpi": [
+        "All 50 states modeled",
+        "County-level analysis complete",
+        "State legislative districts mapped"
+      ],
+      "owner": "Chief Data Scientist",
+      "timeline": "Q1 2025 - Q4 2025"
+    },
+    {
+      "id": "longitudinal-panel",
+      "label": "75-Year Panel Dataset",
+      "category": "Data & Modeling",
+      "description": "Synthetic longitudinal dataset tracking individuals over lifetimes for Social Security benefits and retirement policy simulation",
+      "kpi": [
+        "75-year panel dataset live",
+        "Aligned with SSA projections",
+        "Lifetime impact modeling ready"
+      ],
+      "owner": "Chief Economist",
+      "timeline": "Q2 2025 - Q4 2026"
+    },
+    {
+      "id": "health-insurance",
+      "label": "Health Insurance Dynamics",
+      "category": "Data & Modeling",
+      "description": "Synthetic firm-level data linking employees to employers for modeling insurance mandates and workplace coverage dynamics",
+      "kpi": [
+        "Employer coverage model complete",
+        "Firm-level synthetic data integrated",
+        "CBO HPSIM-inspired approach implemented"
+      ],
+      "owner": "Health Policy Lead",
+      "timeline": "Q3 2025 - Q2 2026"
+    },
+    {
+      "id": "olg-macro",
+      "label": "OLG Economic Model",
+      "category": "Data & Modeling",
+      "description": "Overlapping Generations model for long-run growth and fiscal sustainability impacts with dynamic scoring capabilities",
+      "kpi": [
+        "OLG model operational",
+        "Corporate tax module integrated",
+        "Dynamic analysis available"
+      ],
+      "owner": "Chief Economist",
+      "timeline": "Q1 2026 - Q4 2027"
+    },
+    {
+      "id": "ai-behavioral",
+      "label": "AI-Powered Behavioral Simulation",
+      "category": "Data & Modeling",
+      "description": "LLM-based individual household decision-making simulation calibrated to empirical research for realistic behavioral responses",
+      "kpi": [
+        "LLM behavioral model prototype",
+        "Calibrated to empirical elasticities",
+        "Individual-level responses modeled"
+      ],
+      "owner": "AI Research Lead",
+      "timeline": "Q2 2026 - Q4 2027"
+    },
+    {
+      "id": "safety-net-programs",
+      "label": "Comprehensive Safety Net Coverage",
+      "category": "Policy Coverage",
+      "description": "Expanding to include TANF, CCDF, LIHEAP and state-specific programs with geographic benefit take-up analysis",
+      "kpi": [
+        "TANF in all states",
+        "CCDF and LIHEAP modeled",
+        "Take-up rates by geography identified"
+      ],
+      "owner": "Policy Research Lead",
+      "timeline": "Q1 2025 - Q3 2025"
+    },
+    {
+      "id": "tax-coverage",
+      "label": "Complete Tax Policy Coverage",
+      "category": "Policy Coverage",
+      "description": "Adding sales taxes, property taxes, and corporate/business taxation for holistic fiscal policy analysis",
+      "kpi": [
+        "State/local sales taxes integrated",
+        "Property tax modeling complete",
+        "Corporate tax module operational"
+      ],
+      "owner": "Tax Policy Lead",
+      "timeline": "Q2 2025 - Q4 2025"
+    },
+    {
+      "id": "public-services",
+      "label": "Public Services & In-Kind Benefits",
+      "category": "Policy Coverage",
+      "description": "Integrating education spending, healthcare benefits valuation, childcare assistance, and housing vouchers",
+      "kpi": [
+        "Medicaid/Medicare value modeled",
+        "Childcare subsidies integrated",
+        "Housing voucher simulation ready"
+      ],
+      "owner": "Social Policy Lead",
+      "timeline": "Q3 2025 - Q2 2026"
+    },
+    {
+      "id": "local-policies",
+      "label": "Local Regulations & Zoning",
+      "category": "Policy Coverage",
+      "description": "Modeling local minimum wages, zoning laws, and land-use policies for urban policy research",
+      "kpi": [
+        "Local minimum wage tool",
+        "Zoning impact prototype",
+        "3+ cities modeled"
+      ],
+      "owner": "Urban Policy Lead",
+      "timeline": "Q4 2025 - Q4 2026"
+    },
+    {
+      "id": "benefit-access",
+      "label": "Benefit Access Research",
+      "category": "Policy Research",
+      "description": "Optimized question sequences for benefit screeners to streamline enrollment and increase program uptake",
+      "kpi": [
+        "Optimal screener algorithm",
+        "Drop-off analysis complete",
+        "3+ agencies implementing"
+      ],
+      "owner": "Director of Policy Research",
+      "timeline": "Q2 2025 - Q4 2025"
+    },
+    {
+      "id": "web-platform-2",
+      "label": "PolicyEngine 2.0 Platform",
+      "category": "Technology",
+      "description": "New web application with user accounts, saved scenarios, team collaboration, and professional features",
+      "kpi": [
+        "User accounts launched",
+        "Collaboration features live",
+        "Premium tier available"
+      ],
+      "owner": "CTO",
+      "timeline": "Q1 2025 - Q3 2025"
+    },
+    {
+      "id": "api-enhancements",
+      "label": "Robust API & Developer Tools",
+      "category": "Technology",
+      "description": "Scalable API with SDKs in multiple languages, batch processing, and comprehensive documentation",
+      "kpi": [
+        "10M+ API calls/month",
+        "Python, R, JS SDKs available",
+        "Batch processing operational"
+      ],
+      "owner": "Engineering Lead",
+      "timeline": "Q2 2025 - Q4 2025"
+    },
+    {
+      "id": "research-workbench",
+      "label": "PolicyEngine Workbench",
+      "category": "Technology",
+      "description": "Cloud-based Jupyter environment pre-loaded with PolicyEngine data and libraries for power users",
+      "kpi": [
+        "Workbench launched",
+        "100+ active researchers",
+        "Microdata access framework"
+      ],
+      "owner": "Platform Lead",
+      "timeline": "Q3 2025 - Q1 2026"
+    },
+    {
+      "id": "ai-assistance",
+      "label": "AI-Powered User Features",
+      "category": "Technology",
+      "description": "AI explanations for calculations, report generation, and API access to explanation system",
+      "kpi": [
+        "AI explanations in production",
+        "Report generation automated",
+        "API explanation access live"
+      ],
+      "owner": "AI Product Lead",
+      "timeline": "Q1 2025 - Q2 2025"
+    },
+    {
+      "id": "performance-scaling",
+      "label": "Performance & Infrastructure",
+      "category": "Technology",
+      "description": "Parallel processing, auto-scaling clusters, and centralized database for speed and reliability",
+      "kpi": [
+        "99.9% uptime achieved",
+        "Sub-second simulations",
+        "Auto-scaling operational"
+      ],
+      "owner": "Infrastructure Lead",
+      "timeline": "Q2 2025 - Q4 2025"
+    },
+    {
+      "id": "open-source-ecosystem",
+      "label": "Open-Source Community",
+      "category": "Community & Partnerships",
+      "description": "Active GitHub repos, version-controlled policy rules, containerized deployment, and contributor growth",
+      "kpi": [
+        "200+ OSS contributors",
+        "5 hackathons/year",
+        "NSF POSE grant active"
+      ],
+      "owner": "Community Manager",
+      "timeline": "Ongoing"
+    },
+    {
+      "id": "academic-partnerships",
+      "label": "Academic Research Partnerships",
+      "category": "Community & Partnerships",
+      "description": "Collaborations with Georgetown, Michigan, USC and others for validation and methodology improvements",
+      "kpi": [
+        "10+ active partnerships",
+        "5+ peer-reviewed papers",
+        "Conference presentations"
+      ],
+      "owner": "Research Director",
+      "timeline": "Ongoing"
+    },
+    {
+      "id": "government-think-tanks",
+      "label": "Government & Think Tank Collaboration",
+      "category": "Community & Partnerships",
+      "description": "Pilot projects with state budget offices and think tanks for real-world validation and improvement",
+      "kpi": [
+        "5+ state partnerships",
+        "Congressional staff users",
+        "Think tank integrations"
+      ],
+      "owner": "Head of Partnerships",
+      "timeline": "Ongoing"
+    },
+    {
+      "id": "user-support",
+      "label": "User Support & Training",
+      "category": "Community & Partnerships",
+      "description": "Documentation, community forum, certification programs, and power user network development",
+      "kpi": [
+        "Certification program launched",
+        "1000+ forum members",
+        "Power user network active"
+      ],
+      "owner": "Head of Education",
+      "timeline": "Q2 2025 - Q4 2025"
+    },
+    {
+      "id": "international-expansion",
+      "label": "International Expansion",
+      "category": "Growth",
+      "description": "Expanding to Canada and other countries with local partnerships for global policy analysis democratization",
+      "kpi": [
+        "Canada model complete",
+        "2+ new countries",
+        "International partnerships"
+      ],
+      "owner": "International Lead",
+      "timeline": "Q3 2025 - Q4 2027"
+    },
+    {
+      "id": "media-outreach",
+      "label": "Media & Public Discourse",
+      "category": "Growth",
+      "description": "Tools and support for journalists to provide localized analysis and inform public policy debates",
+      "kpi": [
+        "Media toolkit launched",
+        "50+ media citations/quarter",
+        "Rapid response team"
+      ],
+      "owner": "Communications Lead",
+      "timeline": "Q1 2025 - Q2 2025"
+    },
+    {
+      "id": "funding-sustainability",
+      "label": "Funding & Revenue Growth",
+      "category": "Growth",
+      "description": "Diversified funding through grants, API subscriptions, premium services, and consulting",
+      "kpi": [
+        "$5M+ annual budget",
+        "30% earned revenue",
+        "Multi-year grants secured"
+      ],
+      "owner": "CEO",
+      "timeline": "Ongoing"
+    },
+    {
+      "id": "current-researchers",
+      "label": "Current: Think Tanks & Academics",
+      "category": "Users & Stakeholders",
+      "description": "Think tanks like Niskanen Center, academics at Georgetown, Michigan, USC. Congressional staff including Joint Economic Committee.",
+      "kpi": [
+        "Active users from 10+ think tanks",
+        "5+ university partnerships",
+        "Congressional staff engagement"
+      ],
+      "owner": "Head of Partnerships",
+      "timeline": "Active Now"
+    },
+    {
+      "id": "current-benefit-tools",
+      "label": "Current: Benefit Access Platforms",
+      "category": "Users & Stakeholders",
+      "description": "MyFriendBen (Gates Foundation funded), Benefit Navigator (500+ case managers in LA), other nonprofit benefit screeners.",
+      "kpi": [
+        "2+ major platforms using API",
+        "1000s of families served",
+        "$2.4M Gates grant to partner"
+      ],
+      "owner": "API Product Lead",
+      "timeline": "Active Now"
+    },
+    {
+      "id": "current-funders",
+      "label": "Current: Foundation Partners",
+      "category": "Users & Stakeholders",
+      "description": "Arnold Ventures, NEO Philanthropy, Gerald Huff Fund, PSL Foundation, Corvus Oaks, Nuffield Foundation (UK).",
+      "kpi": [
+        "6+ active funders",
+        "Multi-year commitments",
+        "Project-specific grants"
+      ],
+      "owner": "CEO",
+      "timeline": "Active Now"
+    },
+    {
+      "id": "prospective-government",
+      "label": "Prospective: Government Agencies",
+      "category": "Users & Stakeholders",
+      "description": "State budget offices, Census Bureau, federal statistical agencies seeking tax calculation engines and policy modeling.",
+      "kpi": [
+        "3+ agency contracts",
+        "State-level partnerships",
+        "Federal validation"
+      ],
+      "owner": "Government Relations Lead",
+      "timeline": "Q2 2025 - Ongoing"
+    },
+    {
+      "id": "prospective-financial",
+      "label": "Prospective: Financial Services",
+      "category": "Users & Stakeholders",
+      "description": "Banks (Barclays expressed interest), accounting firms, fintech apps, tax advisors needing accurate benefit/tax calculations.",
+      "kpi": [
+        "5+ enterprise clients",
+        "API subscription revenue",
+        "White-label deployments"
+      ],
+      "owner": "Business Development",
+      "timeline": "Q3 2025 - Ongoing"
+    },
+    {
+      "id": "prospective-media",
+      "label": "Prospective: Media & Journalists",
+      "category": "Users & Stakeholders",
+      "description": "News outlets seeking localized policy analysis, rapid response for legislative changes, data journalism support.",
+      "kpi": [
+        "50+ media citations/quarter",
+        "Media toolkit adoption",
+        "Training workshops delivered"
+      ],
+      "owner": "Communications Lead",
+      "timeline": "Q1 2025 - Ongoing"
+    },
+    {
+      "id": "prospective-international",
+      "label": "Prospective: International Partners",
+      "category": "Users & Stakeholders",
+      "description": "Canadian government agencies, European policy institutes, multilateral organizations seeking open policy modeling.",
+      "kpi": [
+        "Canada launch",
+        "2+ new countries",
+        "International funding secured"
+      ],
+      "owner": "International Lead",
+      "timeline": "Q3 2025 - Q4 2027"
+    },
+    {
+      "id": "prospective-funders",
+      "label": "Prospective: New Funders",
+      "category": "Users & Stakeholders",
+      "description": "Gates Foundation (beyond MyFriendBen), Rockefeller Foundation, climate funders, NSF expansion, international donors.",
+      "kpi": [
+        "$5M+ annual budget",
+        "10+ total funders",
+        "Diversified funding base"
+      ],
+      "owner": "CEO",
+      "timeline": "Q1 2025 - Ongoing"
+    }
+  ],
+  "edges": [
+    {
+      "id": "geo-to-safety-net",
+      "source": "granular-geo",
+      "target": "safety-net-programs",
+      "label": "Enables geographic benefit analysis"
+    },
+    {
+      "id": "panel-to-olg",
+      "source": "longitudinal-panel",
+      "target": "olg-macro",
+      "label": "Provides lifetime data for macro model"
+    },
+    {
+      "id": "health-to-services",
+      "source": "health-insurance",
+      "target": "public-services",
+      "label": "Complements employer coverage modeling"
+    },
+    {
+      "id": "olg-to-tax",
+      "source": "olg-macro",
+      "target": "tax-coverage",
+      "label": "Integrates corporate tax dynamics"
+    },
+    {
+      "id": "ai-to-workbench",
+      "source": "ai-behavioral",
+      "target": "research-workbench",
+      "label": "Enables behavioral research"
+    },
+    {
+      "id": "safety-net-to-access",
+      "source": "safety-net-programs",
+      "target": "benefit-access",
+      "label": "Informs eligibility optimization"
+    },
+    {
+      "id": "platform-to-api",
+      "source": "web-platform-2",
+      "target": "api-enhancements",
+      "label": "Shares core infrastructure"
+    },
+    {
+      "id": "api-to-ecosystem",
+      "source": "api-enhancements",
+      "target": "open-source-ecosystem",
+      "label": "Powers developer community"
+    },
+    {
+      "id": "workbench-to-academic",
+      "source": "research-workbench",
+      "target": "academic-partnerships",
+      "label": "Facilitates research collaboration"
+    },
+    {
+      "id": "ai-assistance-to-support",
+      "source": "ai-assistance",
+      "target": "user-support",
+      "label": "Enhances user understanding"
+    },
+    {
+      "id": "performance-to-api",
+      "source": "performance-scaling",
+      "target": "api-enhancements",
+      "label": "Ensures reliability at scale"
+    },
+    {
+      "id": "academic-to-gov",
+      "source": "academic-partnerships",
+      "target": "government-think-tanks",
+      "label": "Validates methodology"
+    },
+    {
+      "id": "gov-to-media",
+      "source": "government-think-tanks",
+      "target": "media-outreach",
+      "label": "Provides credible analysis"
+    },
+    {
+      "id": "media-to-funding",
+      "source": "media-outreach",
+      "target": "funding-sustainability",
+      "label": "Increases visibility for funders"
+    },
+    {
+      "id": "international-to-ecosystem",
+      "source": "international-expansion",
+      "target": "open-source-ecosystem",
+      "label": "Grows global community"
+    },
+    {
+      "id": "local-to-geo",
+      "source": "local-policies",
+      "target": "granular-geo",
+      "label": "Leverages local-level modeling"
+    },
+    {
+      "id": "tax-to-platform",
+      "source": "tax-coverage",
+      "target": "web-platform-2",
+      "label": "Expands calculation capabilities"
+    },
+    {
+      "id": "services-to-access",
+      "source": "public-services",
+      "target": "benefit-access",
+      "label": "Completes benefit landscape"
+    },
+    {
+      "id": "support-to-funding",
+      "source": "user-support",
+      "target": "funding-sustainability",
+      "label": "Drives premium subscriptions"
+    },
+    {
+      "id": "ecosystem-to-support",
+      "source": "open-source-ecosystem",
+      "target": "user-support",
+      "label": "Community helps community"
+    },
+    {
+      "id": "current-researchers-to-workbench",
+      "source": "current-researchers",
+      "target": "research-workbench",
+      "label": "Primary users of workbench"
+    },
+    {
+      "id": "current-benefit-to-api",
+      "source": "current-benefit-tools",
+      "target": "api-enhancements",
+      "label": "Drive API requirements"
+    },
+    {
+      "id": "current-funders-to-funding",
+      "source": "current-funders",
+      "target": "funding-sustainability",
+      "label": "Core funding base"
+    },
+    {
+      "id": "platform-to-researchers",
+      "source": "web-platform-2",
+      "target": "current-researchers",
+      "label": "Enhanced analysis tools"
+    },
+    {
+      "id": "safety-net-to-benefit-tools",
+      "source": "safety-net-programs",
+      "target": "current-benefit-tools",
+      "label": "Expanded program coverage"
+    },
+    {
+      "id": "gov-to-prospective-gov",
+      "source": "government-think-tanks",
+      "target": "prospective-government",
+      "label": "Builds credibility"
+    },
+    {
+      "id": "api-to-financial",
+      "source": "api-enhancements",
+      "target": "prospective-financial",
+      "label": "Enterprise-ready API"
+    },
+    {
+      "id": "media-toolkit-to-journalists",
+      "source": "media-outreach",
+      "target": "prospective-media",
+      "label": "Enables rapid analysis"
+    },
+    {
+      "id": "international-to-partners",
+      "source": "international-expansion",
+      "target": "prospective-international",
+      "label": "Opens new markets"
+    },
+    {
+      "id": "prospective-funders-to-sustainability",
+      "source": "prospective-funders",
+      "target": "funding-sustainability",
+      "label": "Growth funding"
+    },
+    {
+      "id": "local-to-media",
+      "source": "local-policies",
+      "target": "prospective-media",
+      "label": "Local story angles"
+    },
+    {
+      "id": "ai-to-financial",
+      "source": "ai-assistance",
+      "target": "prospective-financial",
+      "label": "Premium AI features"
+    }
+  ]
+}
