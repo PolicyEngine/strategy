@@ -1,4 +1,4 @@
-import { palette } from './palette';
+import { palette, ColorKey } from './palette';
 
 describe('palette', () => {
   it('should export palette object with all colors', () => {
@@ -7,29 +7,24 @@ describe('palette', () => {
   });
 
   it('should have all required color properties', () => {
-    const requiredColors = [
+    const requiredColors: ColorKey[] = [
       'WHITE',
       'BLUE_98',
-      'BLUE_80',
-      'BLUE_60',
-      'BLUE_50',
-      'BLUE_25',
       'BLUE',
-      'DARK_BLUE',
+      'BLUE_LIGHT',
+      'BLUE_PRESSED',
+      'DARK_BLUE_HOVER',
       'DARKEST_BLUE',
       'TEAL_ACCENT',
-      'LIGHTER_GREEN',
+      'TEAL_LIGHT',
+      'TEAL_PRESSED',
       'LIGHT_GRAY',
       'GRAY',
-      'MEDIUM_GRAY',
+      'MEDIUM_DARK_GRAY',
+      'MEDIUM_LIGHT_GRAY',
       'DARK_GRAY',
+      'DARK_RED',
       'BLACK',
-      'RED',
-      'LIGHT_RED',
-      'YELLOW',
-      'LIGHT_YELLOW',
-      'ORANGE',
-      'LIGHT_ORANGE',
     ];
 
     requiredColors.forEach(color => {
@@ -48,21 +43,18 @@ describe('palette', () => {
 
   it('should have correct specific color values', () => {
     expect(palette.WHITE).toBe('#FFFFFF');
-    expect(palette.BLUE).toBe('#2c6e94');
+    expect(palette.BLUE).toBe('#2C6496');
     expect(palette.BLACK).toBe('#000000');
-    expect(palette.RED).toBe('#ff4458');
   });
 
   it('should have blue gradient colors in correct order', () => {
-    // Blue colors should get darker as we go from BLUE_98 to DARKEST_BLUE
+    // Blue colors should get darker
     const blueGradient = [
       palette.BLUE_98,
-      palette.BLUE_80,
-      palette.BLUE_60,
-      palette.BLUE_50,
-      palette.BLUE_25,
+      palette.BLUE_LIGHT,
       palette.BLUE,
-      palette.DARK_BLUE,
+      palette.BLUE_PRESSED,
+      palette.DARK_BLUE_HOVER,
       palette.DARKEST_BLUE,
     ];
 
@@ -76,8 +68,9 @@ describe('palette', () => {
   it('should have gray gradient colors', () => {
     const grayColors = [
       palette.LIGHT_GRAY,
+      palette.MEDIUM_LIGHT_GRAY,
+      palette.MEDIUM_DARK_GRAY,
       palette.GRAY,
-      palette.MEDIUM_GRAY,
       palette.DARK_GRAY,
     ];
 
@@ -90,13 +83,9 @@ describe('palette', () => {
   it('should have accent colors', () => {
     const accentColors = [
       palette.TEAL_ACCENT,
-      palette.LIGHTER_GREEN,
-      palette.RED,
-      palette.LIGHT_RED,
-      palette.YELLOW,
-      palette.LIGHT_YELLOW,
-      palette.ORANGE,
-      palette.LIGHT_ORANGE,
+      palette.TEAL_LIGHT,
+      palette.TEAL_PRESSED,
+      palette.DARK_RED,
     ];
 
     accentColors.forEach(color => {
