@@ -102,9 +102,10 @@ const TechStackAuto = () => {
     
     // Create node objects for nodes with edges
     const filteredNodes: Node[] = Array.from(nodesWithEdges).map(nodeId => {
-      const nodeData = techStackData.nodes[nodeId];
-      const style = nodeData ? {
-        ...techStackData.categoryStyles[nodeData.category],
+      const nodeData = (techStackData.nodes as Record<string, NodeData>)[nodeId];
+      const categoryStyles = techStackData.categoryStyles as Record<string, any>;
+      const style = nodeData && categoryStyles[nodeData.category] ? {
+        ...categoryStyles[nodeData.category],
         cursor: 'pointer'
       } : {};
       
