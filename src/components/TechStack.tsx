@@ -82,7 +82,7 @@ const getLayoutedElements = (nodes: Node[], edges: Edge[], direction = 'TB') => 
   return { nodes, edges };
 };
 
-const TechStackAuto = () => {
+const TechStack = () => {
   const [view, setView] = useState<'current' | 'future'>('current');
   const [hoveredNode, setHoveredNode] = useState<string | null>(null);
   const [nodes, setNodes, onNodesChange] = useNodesState([]);
@@ -265,4 +265,4 @@ const TechStackAuto = () => {
   );
 };
 
-export default TechStackAuto;
+export default TechStack;

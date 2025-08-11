@@ -3,6 +3,42 @@ import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import App from './App';
 
+// Mock react-router-dom
+jest.mock('react-router-dom', () => ({
+  ...jest.requireActual('react-router-dom'),
+  HashRouter: ({ children }: any) => <div>{children}</div>,
+  Routes: ({ children }: any) => <div>{children}</div>,
+  Route: ({ element }: any) => element,
+  Navigate: ({ to }: any) => <div>Navigate to {to}</div>,
+  useNavigate: () => jest.fn(),
+  useLocation: () => ({ pathname: '/roadmap' }),
+}));
+
+// Mock components
+jest.mock('./components/TopBar', () => {
+  return function TopBar() {
+    return (
+      <div>
+        <h6>PolicyEngine Strategy</h6>
+        <button>Roadmap</button>
+        <button>Tech Stack</button>
+      </div>
+    );
+  };
+});
+
+jest.mock('./components/RoadmapGraph', () => {
+  return function RoadmapGraph() {
+    return <div>RoadmapGraph</div>;
+  };
+});
+
+jest.mock('./components/TechStack', () => {
+  return function TechStack() {
+    return <div>TechStack</div>;
+  };
+});
+
 describe('App Integration Tests', () => {
   it('should compile and render without errors', () => {
     // This is the most basic test - if this fails, nothing else matters

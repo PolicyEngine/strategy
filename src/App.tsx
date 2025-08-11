@@ -4,7 +4,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { palette } from "./theme/palette";
 import RoadmapGraph from "./components/RoadmapGraph";
-import TechStackAuto from "./components/TechStackAuto";
+import TechStack from "./components/TechStack";
 import TopBar from "./components/TopBar";
 
 const theme = createTheme({
@@ -40,7 +40,7 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<Navigate to="/roadmap" replace />} />
           <Route path="/roadmap" element={<RoadmapGraph />} />
-          <Route path="/tech-stack" element={<TechStackAuto />} />
+          <Route path="/tech-stack" element={<TechStack />} />
         </Routes>
       </Router>
     </ThemeProvider>
